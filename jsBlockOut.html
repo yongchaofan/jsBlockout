@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML5 BlockOut</title>
-	<style type="text/css">
-	body {background-color:orange;}
-	label {font-face: 'Courier'; font-size: large; border: none; color:teal;}
-	select {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange}
-	input {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange }
-	</style>
+  <title>HTML5 BlockOut</title>
+  <style type="text/css">
+  body {background-color:orange;}
+  label {font-face: 'Courier'; font-size: large; border: none; color:teal;}
+  select {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange}
+  input {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange }
+  </style>
 </head>
 
 <body onload="init_Game()">
 <main>
-	<audio id="ding" preload="auto">
-		<source src="Ding.mp3" type="audio/mpeg">
-		<source src="Ding.wav" type="audio/wav">
-	</audio>
-	<audio id="dong" preload="auto">
-		<source src="Dong.mp3" type="audio/mpeg">
-		<source src="Dong.wav" type="audio/wav">
-	</audio>
-	<audio id="dang" preload="auto">
-		<source src="Dang.mp3" type="audio/mpeg">
-		<source src="Dang.wav" type="audio/wav">
-	</audio>
-	<audio id="game" preload="auto">
-		<source src="Game.mp3" type="audio/mpeg">
-		<source src="Game.wav" type="audio/wav">
-	</audio>
+  <audio id="ding" preload="auto">
+    <source src="Ding.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="dong" preload="auto">
+    <source src="Dong.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="dang" preload="auto">
+    <source src="Dang.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="game" preload="auto">
+    <source src="Game.mp3" type="audio/mpeg">
+  </audio>
 
   <form>
     <label>BlockSet:</label>
