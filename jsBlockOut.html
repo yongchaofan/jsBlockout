@@ -3,10 +3,10 @@
 <head>
   <title>HTML5 BlockOut</title>
   <style type="text/css">
-  body {background-color:orange;}
-  label {font-face: 'Courier'; font-size: large; border: none; color:teal;}
-  select {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange}
-  input {font-face: 'Courier'; font-size: large; border: none; color:teal;background-color:orange }
+  body { font-face: 'Courier New'; font-size: 24px; }
+  label { border: none; color:teal;}
+  input { border: none;  font-size: 24px; }
+  select { font-size: 24px; }
   </style>
 </head>
 
@@ -49,30 +49,46 @@
     <input type="button" id="cubes" value="0"/>
     <label>&nbsp Score:</label>
     <input type="button" id="score" value="0"/>
-  </form>
+  </form><br/>
   
   <div id="canvasesdiv" style="position:relative; width:600px; height:600px" onclick="start_Game()">
     <canvas id="pit" style="position:absolute;left:0;top:0;z-index:1;" width="600px" height="600px"></canvas>
     <canvas id="solidcubes" style="position:absolute;left:0;top:0;z-index:2;" width="600px" height="600px"></canvas>
     <canvas id="wirecubes" style="position:absolute;left:0;top:0;z-index:3;" width="600px" height="600px"></canvas>
-  </div>
-
+  </div><br/>
+  
   <form>
-    <input type="button" value="Q" onclick="keyHandler(81)" />
-    <input type="button" value="W" onclick="keyHandler(87)" />
-    <input type="button" value="E" onclick="keyHandler(69)" />
-    <input type="button" value="A" onclick="keyHandler(65)" />
-    <input type="button" value="S" onclick="keyHandler(83)" />
-    <input type="button" value="D" onclick="keyHandler(68)" />
-	&nbsp 
-    <input type="button" value="Space" onclick="keyHandler(32)"/>
-    <input type="button" value="Pause" onclick="keyHandler(80)"/>
-	&nbsp 
-    <input type="button" value="<-" onclick="keyHandler(37)"/>
-    <input type="button" value="->" onclick="keyHandler(39)"/>
-    <input type="button" value="^" onclick="keyHandler(38)"/>
-    <input type="button" value="|" onclick="keyHandler(40)"/>
-  </form>
+    <table>
+	  <tr>
+	    <td width="60" align="center"><input type="button" value="Q" onclick="keyHandler(81)" /></td>
+	    <td width="60" align="center"><input type="button" value="W" onclick="keyHandler(87)" /></td>
+		<td width="60" align="center"><input type="button" value="E" onclick="keyHandler(69)" /></td>
+	    <td width="200"></td>
+	    <td width="60" align="center"></td>
+	    <td width="60" align="center"><input type="button" value=&uarr; onclick="keyHandler(38)"/></td>
+	    <td width="60" align="center"></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+        <td></td>
+	    <td align="center"><input type="button" value="Drop" onclick="keyHandler(32)"/></td>
+ 	    <td align="center"><input type="button" value=&larr; onclick="keyHandler(37)"/></td>
+	    <td></td>
+	    <td align="center"><input type="button" value=&rarr; onclick="keyHandler(39)"/></td>
+      </tr>
+      <tr>
+        <td align="center"><input type="button" value="A" onclick="keyHandler(65)" /></td>
+        <td align="center"><input type="button" value="S" onclick="keyHandler(83)" /></td>
+        <td align="center"><input type="button" value="D" onclick="keyHandler(68)" /></td>
+	    <td></td>
+	    <td></td>
+	    <td align="center"><input type="button" value=&darr; onclick="keyHandler(38)"/></td>
+	    <td></td>
+	  </tr>
+	</table>
+  </form><br/><br/>
+
 <script type="text/javascript">
 var keyQ=81, keyW=87, keyE=69, keyA=65, keyS=83, keyD=68, keyP=80;
 var keySPACE=32, keyLEFT=37, keyUP=38, keyRIGHT=39, keyDOWN=40;
